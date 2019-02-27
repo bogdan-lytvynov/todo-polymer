@@ -1,0 +1,12 @@
+{
+  "entrypoint": "index.html",
+  "npm": true,
+  "shell": "/src/todo-app.js",
+  "moduleResolution": "node",
+  "basePath": true,
+  "lint": {
+    "rules": [
+      "polymer-3"
+    ]
+  }
+}

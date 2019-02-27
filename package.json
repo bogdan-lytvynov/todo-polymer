@@ -1,0 +1,26 @@
+{
+  "name": "todo-polymer",
+  "version": "1.0.0",
+  "description": "TODO list using polymer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com-bogdan-lytvynov:bogdan-lytvynov/todo-polymer.git"
+  },
+  "author": "bogdan-lytvynov",
+  "license": "ISC",
+  "dependencies": {
+    "@polymer/app-route": "^3.0.2",
+    "@polymer/iron-selector": "^3.0.1",
+    "@polymer/polymer": "^3.1.0",
+    "@vaadin/router": "^1.2.0",
+    "lit-element": "^2.0.1"
+  },
+  "devDependencies": {
+    "polymer-cli": "^1.9.6",
+    "polymer": "^0.5.0"
+  }
+}

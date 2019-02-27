@@ -1,0 +1,16 @@
+<html>
+<head>
+  <script src="https://unpkg.com/@webcomponents/webcomponentsjs@next/webcomponents-loader.js" defer></script>
+  <script type="module">
+    window.WebComponents = window.WebComponents || {
+      waitFor(cb){ addEventListener('WebComponentsReady', cb) }
+    }
+    WebComponents.waitFor(async () => {
+      import('./src/app');
+    });
+  </script>
+</head>
+<body>
+  <div id="root"></div>
+</body>
+</html>
