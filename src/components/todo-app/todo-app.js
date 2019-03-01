@@ -89,7 +89,9 @@ class TodoApp extends LitElement {
              ?completed="${completed}"
              @delete-todo-item="${this.onDeleteItem}"
              @toggle-todo-item="${this.onToggleItem}"
-             />`)} 
+             >
+              <span class="item-name">${name}</span>
+             </todo-item>`)} 
 
            <footer>
             <iron-selector selected="${this.filter}" attr-for-selected="filter">

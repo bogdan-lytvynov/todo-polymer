@@ -34,6 +34,10 @@ h1 {
   flex-grow: 1;
 }
 
+.item-name {
+//  color: yellow;
+}
+
 iron-selector {
   display: flex;
   justify-content: flex-start;

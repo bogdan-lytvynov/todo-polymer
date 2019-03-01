@@ -20,10 +20,13 @@ round-checkbox {
   --round-checkbox-size: 24px;
 }
 
-
 .name {
   flex-grow: 1;
   margin-left: 20px;
+}
+
+::slotted(span) {
+ // color: blue;
 }
 
 .close-btn {

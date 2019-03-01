@@ -52,7 +52,9 @@ class TodoItem extends LitElement {
   render() {
     return html`
     <round-checkbox ?checked="${this.completed}" @click=${this.toggleActive}></round-checkbox>
-    <div class="name">${this.name}</div>
+    <div class="name">
+      <slot></slot>
+    </div>
     <button class="close-btn" @click=${this.delete}>×</button>
     `;
   }
