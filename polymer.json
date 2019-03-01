@@ -1,0 +1,6 @@
+{
+  "entrypoint": "index.html",
+  "npm": true,
+  "shell": "/src/components/todo-app/todo-app.js",
+  "moduleResolution": "node"
+}
