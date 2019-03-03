@@ -5,7 +5,15 @@ export const style = css`
   display: block;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
   padding: 30px;
+  font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f5f5f5;
+  color: #4d4d4d;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 300;
+  max-width: 550px;
 }
+
 h1 {
   width: 100%;
   font-size: 100px;
