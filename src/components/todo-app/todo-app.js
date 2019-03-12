@@ -7,7 +7,6 @@ import {style} from './todo-app-styles.js'
 class TodoApp extends LitElement {
   static get properties() {
     return { 
-      taskName: { type: String },
       items: { type: Array },
       filter: {
         type: String, 
@@ -25,7 +24,6 @@ class TodoApp extends LitElement {
 
     this.items = []
     this.nextTaskId = 0;
-    this.taskName = '';
     this.filter = 'all'
   }
 
@@ -81,25 +79,25 @@ class TodoApp extends LitElement {
         </div>
       </header>
 
-         ${this.getFilteredItems()
-             .map(({id, name, completed}) =>
-             html`<todo-item 
-             id="${id}" 
-             name="${name}" 
-             ?completed="${completed}"
-             @delete-todo-item="${this.onDeleteItem}"
-             @toggle-todo-item="${this.onToggleItem}"
-             >
-              <span class="item-name">${name}</span>
-             </todo-item>`)} 
+      ${this.getFilteredItems()
+          .map(({id, name, completed}) =>
+          html`<todo-item 
+          id="${id}" 
+          name="${name}" 
+          ?completed="${completed}"
+          @delete-todo-item="${this.onDeleteItem}"
+          @toggle-todo-item="${this.onToggleItem}"
+          >
+           <span class="item-name">${name}</span>
+          </todo-item>`)} 
 
-           <footer>
-            <iron-selector selected="${this.filter}" attr-for-selected="filter">
-              <div filter="all" @click=${this.onSelectFilter}>All</div>
-              <div filter="active" @click=${this.onSelectFilter}>Active</div>
-              <div filter="completed" @click=${this.onSelectFilter}>Completed</div>
-            </iron-selector>
-           </footer>
+      <footer>
+       <iron-selector selected="${this.filter}" attr-for-selected="filter">
+         <div filter="all" @click=${this.onSelectFilter}>All</div>
+         <div filter="active" @click=${this.onSelectFilter}>Active</div>
+         <div filter="completed" @click=${this.onSelectFilter}>Completed</div>
+       </iron-selector>
+      </footer>
     `;
   }
 }
